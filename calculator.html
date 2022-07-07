@@ -1,0 +1,498 @@
+<html>
+
+<head>
+    <title>calculator</title>
+    <style>
+        #container {
+            background-color: #3a3845;
+            height: 530px;
+            width: 300px;
+            margin: auto;
+            margin-top: 50px;
+        }
+        
+        #textdisplay {
+            height: 70px;
+            width: 250px;
+            background-color: #F7CCAC;
+            margin-top: 30px;
+            border: 0px solid #F7CCAC;
+            margin-left: 25px;
+            font-size: 30px;
+            color: #826F66;
+            text-align: right;
+        }
+        
+        #switchoff {
+            margin-top: 130px;
+            margin-left: 22px;
+            height: 40px;
+            width: 50px;
+            font-size: 18px;
+            font-weight: bold;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: #826F66;
+            background-color: #F7CCAC;
+            border: 0px solid #F7CCAC;
+        }
+        
+        #addition {
+            margin-top: 130px;
+            margin-left: 15px;
+            height: 40px;
+            width: 50px;
+            font-size: 18px;
+            font-weight: bold;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: #826F66;
+            background-color: #F7CCAC;
+            border: 0px solid #F7CCAC;
+        }
+        
+        #subtraction {
+            margin-top: 130px;
+            margin-left: 15px;
+            height: 40px;
+            width: 50px;
+            font-size: 18px;
+            font-weight: bold;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: #826F66;
+            background-color: #F7CCAC;
+            border: 0px solid #F7CCAC;
+        }
+        
+        #on {
+            margin-top: 130px;
+            margin-left: 15px;
+            height: 40px;
+            width: 50px;
+            font-size: 18px;
+            font-weight: bold;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: #826F66;
+            background-color: #F7CCAC;
+            border: 0px solid #F7CCAC;
+        }
+        
+        #division {
+            margin-top: 20px;
+            margin-left: 22px;
+            height: 40px;
+            width: 50px;
+            font-size: 18px;
+            font-weight: bold;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: #826F66;
+            background-color: #F7CCAC;
+            border: 0px solid #F7CCAC;
+        }
+        
+        #percentage {
+            margin-top: 20px;
+            margin-left: 15px;
+            height: 40px;
+            width: 50px;
+            font-size: 18px;
+            font-weight: bold;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: #826F66;
+            background-color: #F7CCAC;
+            border: 0px solid #F7CCAC;
+        }
+        
+        #multiply {
+            margin-top: 20px;
+            margin-left: 15px;
+            height: 40px;
+            width: 50px;
+            font-size: 18px;
+            font-weight: bold;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: #826F66;
+            background-color: #F7CCAC;
+            border: 0px solid #F7CCAC;
+        }
+        
+        #arrow {
+            margin-top: 20px;
+            margin-left: 15px;
+            height: 40px;
+            width: 50px;
+            font-size: 18px;
+            font-weight: bold;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: #826F66;
+            background-color: #F7CCAC;
+            border: 0px solid #F7CCAC;
+        }
+        
+        #one {
+            margin-top: 20px;
+            margin-left: 22px;
+            height: 40px;
+            width: 50px;
+            font-size: 18px;
+            font-weight: bold;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: #826F66;
+            background-color: #F7CCAC;
+            border: 0px solid #F7CCAC;
+        }
+        
+        #two {
+            margin-top: 20px;
+            margin-left: 15px;
+            height: 40px;
+            width: 50px;
+            font-size: 18px;
+            font-weight: bold;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: #826F66;
+            background-color: #F7CCAC;
+            border: 0px solid #F7CCAC;
+        }
+        
+        #three {
+            margin-top: 20px;
+            margin-left: 15px;
+            height: 40px;
+            width: 50px;
+            font-size: 18px;
+            font-weight: bold;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: #826F66;
+            background-color: #F7CCAC;
+            border: 0px solid #F7CCAC;
+        }
+        
+        #doublezero {
+            margin-top: 20px;
+            margin-left: 15px;
+            height: 40px;
+            width: 50px;
+            font-size: 18px;
+            font-weight: bold;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: #826F66;
+            background-color: #F7CCAC;
+            border: 0px solid #F7CCAC;
+        }
+        
+        #four {
+            margin-top: 20px;
+            margin-left: 22px;
+            height: 40px;
+            width: 50px;
+            font-size: 18px;
+            font-weight: bold;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: #826F66;
+            background-color: #F7CCAC;
+            border: 0px solid #F7CCAC;
+        }
+        
+        #five {
+            margin-top: 20px;
+            margin-left: 15px;
+            height: 40px;
+            width: 50px;
+            font-size: 18px;
+            font-weight: bold;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: #826F66;
+            background-color: #F7CCAC;
+            border: 0px solid #F7CCAC;
+        }
+        
+        #six {
+            margin-top: 20px;
+            margin-left: 15px;
+            height: 40px;
+            width: 50px;
+            font-size: 18px;
+            font-weight: bold;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: #826F66;
+            background-color: #F7CCAC;
+            border: 0px solid #F7CCAC;
+        }
+        
+        #zero {
+            margin-top: 20px;
+            margin-left: 15px;
+            height: 40px;
+            width: 50px;
+            font-size: 18px;
+            font-weight: bold;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: #826F66;
+            background-color: #F7CCAC;
+            border: 0px solid #F7CCAC;
+        }
+        
+        #seven {
+            margin-top: 20px;
+            margin-left: 22px;
+            height: 40px;
+            width: 50px;
+            font-size: 18px;
+            font-weight: bold;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: #826F66;
+            background-color: #F7CCAC;
+            border: 0px solid #F7CCAC;
+        }
+        
+        #eight {
+            margin-top: 20px;
+            margin-left: 15px;
+            height: 40px;
+            width: 50px;
+            font-size: 18px;
+            font-weight: bold;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: #826F66;
+            background-color: #F7CCAC;
+            border: 0px solid #F7CCAC;
+        }
+        
+        #nine {
+            margin-top: 20px;
+            margin-left: 15px;
+            height: 40px;
+            width: 50px;
+            font-size: 18px;
+            font-weight: bold;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: #826F66;
+            background-color: #F7CCAC;
+            border: 0px solid #F7CCAC;
+        }
+        
+        #equal {
+            margin-top: 20px;
+            margin-left: 15px;
+            height: 40px;
+            width: 50px;
+            font-size: 18px;
+            font-weight: bold;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: #826F66;
+            background-color: #F7CCAC;
+            border: 0px solid #F7CCAC;
+        }
+    </style>
+    <script>
+        function buttonone() {
+            var result = document.getElementById("textdisplay").value;
+            if (result == "") {
+                document.getElementById("textdisplay").value = 1;
+            } else {
+                document.getElementById("textdisplay").value = result + 1;
+            }
+
+        }
+
+        function buttontwo() {
+            var result = document.getElementById("textdisplay").value;
+            if (result == "") {
+                document.getElementById("textdisplay").value = 2;
+            } else {
+                document.getElementById("textdisplay").value = result + 2;
+            }
+
+        }
+
+        function buttonthree() {
+            var result = document.getElementById("textdisplay").value;
+            if (result == "") {
+                document.getElementById("textdisplay").value = 3;
+            } else {
+                document.getElementById("textdisplay").value = result + 3;
+            }
+
+        }
+
+        function buttonfour() {
+            var result = document.getElementById("textdisplay").value;
+            if (result == "") {
+                document.getElementById("textdisplay").value = 4;
+            } else {
+                document.getElementById("textdisplay").value = result + 4;
+            }
+
+        }
+
+        function buttonfive() {
+            var result = document.getElementById("textdisplay").value;
+            if (result == "") {
+                document.getElementById("textdisplay").value = 5;
+            } else {
+                document.getElementById("textdisplay").value = result + 5;
+            }
+
+        }
+
+        function buttonsix() {
+            var result = document.getElementById("textdisplay").value;
+            if (result == "") {
+                document.getElementById("textdisplay").value = 6;
+            } else {
+                document.getElementById("textdisplay").value = result + 6;
+            }
+
+        }
+
+        function buttonseven() {
+            var result = document.getElementById("textdisplay").value;
+            if (result == "") {
+                document.getElementById("textdisplay").value = 7;
+            } else {
+                document.getElementById("textdisplay").value = result + 7;
+            }
+
+        }
+
+        function buttoneight() {
+            var result = document.getElementById("textdisplay").value;
+            if (result == "") {
+                document.getElementById("textdisplay").value = 8;
+            } else {
+                document.getElementById("textdisplay").value = result + 8;
+            }
+
+        }
+
+        function buttonnine() {
+            var result = document.getElementById("textdisplay").value;
+            if (result == "") {
+                document.getElementById("textdisplay").value = 9;
+            } else {
+                document.getElementById("textdisplay").value = result + 9;
+            }
+
+        }
+
+        function buttonzero() {
+            var result = document.getElementById("textdisplay").value;
+            if (result == "") {
+                document.getElementById("textdisplay").value = 0;
+            } else {
+                document.getElementById("textdisplay").value = result + 0;
+            }
+
+        }
+
+        function buttondoublezero() {
+            var result = document.getElementById("textdisplay").value;
+            if (result == "") {
+                document.getElementById("textdisplay").value = "00";
+            } else {
+                document.getElementById("textdisplay").value = result + "00";
+            }
+
+        }
+
+        function offbutton1() {
+            document.getElementById("textdisplay").value = "";
+        }
+        var input1;
+
+        function addbutton() {
+            input1 = document.getElementById("textdisplay").value;
+
+            document.getElementById("textdisplay").value = "";
+
+            plusstatus = true;
+        }
+        var plusstatus;
+        var minusstatus;
+        var divisionstatus;
+        var multiplystatus;
+        var percentstatus;
+
+        function percentbutton() {
+            input1 = document.getElementById("textdisplay").value;
+            document.getElementById("textdisplay").value = input1 / 100;
+            percentstatus = true;
+        }
+
+        function subtractbutton() {
+            input1 = document.getElementById("textdisplay").value;
+
+            document.getElementById("textdisplay").value = "";
+            minusstatus = true;
+        }
+
+        function divisionbutton() {
+            input1 = document.getElementById("textdisplay").value;
+
+            document.getElementById("textdisplay").value = "";
+            divisionstatus = true;
+        }
+
+        function timesbutton() {
+            input1 = document.getElementById("textdisplay").value;
+
+            document.getElementById("textdisplay").value = "";
+            multiplystatus = true;
+        }
+
+        function equalbutton() {
+            if (plusstatus == true) {
+
+
+                var input2 = document.getElementById("textdisplay").value;
+                var addtogether = parseInt(input1) + parseInt(input2);
+                document.getElementById("textdisplay").value = addtogether;
+                plusstatus = false;
+            } else if (minusstatus == true) {
+                var input2 = document.getElementById("textdisplay").value;
+                var addtogether = parseInt(input1) - parseInt(input2);
+                document.getElementById("textdisplay").value = addtogether;
+                minusstatus = false;
+            } else if (divisionstatus == true) {
+                var input2 = document.getElementById("textdisplay").value;
+                var addtogether = parseInt(input1) / parseInt(input2);
+                document.getElementById("textdisplay").value = addtogether;
+                divisionstatus = false;
+            } else if (multiplystatus == true) {
+                var input2 = document.getElementById("textdisplay").value;
+                var addtogether = parseInt(input1) * parseInt(input2);
+                document.getElementById("textdisplay").value = addtogether;
+                multiplystatus = false;
+            }
+        }
+    </script>
+</head>
+
+<body id="body">
+    <div id="container">
+        <form method="post" id="form">
+            <input type="text" id="textdisplay"><br>
+            <button type="button" id="switchoff" onclick="offbutton1();">off</button>
+            <button type="button" id="addition" onclick="addbutton();">+</button>
+            <button type="button" id="subtraction" onclick="subtractbutton();">-</button>
+            <button type="button" id="on" onclick="onbutton();">on</button>
+            <button type="button" id="division" onclick="divisionbutton();">/</button>
+            <button type="button" id="percentage" onclick="percentbutton();">%</button>
+            <button type="button" id="multiply" onclick="timesbutton();">x</button>
+            <button type="button" id="arrow" onclick="arrowbutton();">&slarr;</button>
+            <button type="button" id="one" onclick="buttonone();">1</button>
+            <button type="button" id="two" onclick="buttontwo();">2</button>
+            <button type="button" id="three" onclick="buttonthree();">3</button>
+            <button type="button" id="doublezero" onclick="buttondoublezero();">00</button>
+            <button type="button" id="four" onclick="buttonfour();">4</button>
+            <button type="button" id="five" onclick="buttonfive();">5</button>
+            <button type="button" id="six" onclick="buttonsix();">6</button>
+            <button type="button" id="zero" onclick="buttonzero();">0</button>
+            <button type="button" id="seven" onclick="buttonseven();">7</button>
+            <button type="button" id="eight" onclick="buttoneight();">8</button>
+            <button type="button" id="nine" onclick="buttonnine();">9</button>
+            <button type="button" id="equal" onclick="equalbutton();">=</button>
+        </form>
+    </div>
+</body>
+
+</html>
